@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  
+}
+header {
+  position: relative;
+}
+.nav-intro {
+  position: absolute;
+}
+
+.cover-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: right;
+  border: 10px inset #E53935;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.intro-heading {
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 3rem;
+  font-family: raleway;
+  color: white;
+  text-shadow: 2px 2px 2px #E53935;
+}
+.nav-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-menu a {
+  padding: 0 3em;
+  text-decoration: underline; 
+  font-size: 1.5rem;
+  color: white;
+}
+.overlook {
+  width: 50%;
+}
+@media (max-width: 700px) {
+  .nav-menu ul,
+  .flex-parent{
+    flex-direction: column;
+  }
+  .flex-parent {
+    text-align: center;
+  }
+  .intro-heading {
+    font-size: 2.5rem;
+  }
+}
+p {
+  text-indent: 3rem;
+}
+span {
+  font-weight: 700;
+  font-style: italic;
+}
+.aboutbk {
+  padding: 1em;
+  font-size: 2rem;
+  font-style: italic;
+}
+.overlook {
+  margin: 0 1em;
+  float: left;
+  border: 5px outset lightblue;
+}
+.aboutp {
+  font-size: 1.5rem;
+  padding: 0.9em;
+}
+.about {
+  padding-bottom: 1em;
+  background-color: #00BFA5;
+}
+.flexbox {
+  display: flex;
+  justify-content: space-around;
+  
+  background-color: #0091EA;
+  border: 1px solid #000;
+  text-align: center;
+  height: 50vh;
+}
+.flexelement {
+  flex-grow: 1;
+  text-align: center;
+  padding: 3em 0.5em;
+/*   border: 1px solid #000; */
+}
+.flexelement a {
+  color: #fff;
+}
+.flexelement h3 {
+  padding-bottom: 2em;
+}
+.flex-parent {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(https://images.unsplash.com/photo-1458872820079-09bf874886ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+  background-position: center center;
+}
+.icons {
+  font-size: 2.5rem;
+  padding: .4em 1.5em;
+  color: white;
+  background: #fff;
+}
+.title,
+.other{
+  padding: .4em 1em; 
+  font-size: 1.5rem;
+  color: #fff;
+}
