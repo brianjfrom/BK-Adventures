@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+}
+p {
+  text-indent: 5rem;
+}
+ul {
+  display: flex;
+  justify-content: flex-start;
+}
+li {
+  padding: 0 2em;
+}
+li a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.title,
+.title h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1em ;
+  color: black;
+  text-shadow: 1px 1px white, -1px -1px white, -1px  1px white, 1px -1px white;
+}
+header {
+  border: 1px solid #000;
+  background-image: url(https://images.unsplash.com/photo-1540609638435-eb6d19eabd02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.title h2 {
+  font-size: 1.5rem;
+}
+.img1 {
+  transform: rotate(180deg);
+  width: 50%;
+  float: left;
+  padding-left: 1em;
+}
+.img2 {
+  width: 50%;
+  float: right;
+  padding-right: 1em;
+}
+.img3 {
+  width: 50%;
+  float: left;
+  padding-right: 1em;
+}
+.img4 {
+  width: 33.3%;
+  float: left;
+  padding-right: 1em;
+}
+.img5 {
+  width: 33.3%;
+  float: right;
+  padding-left: 1em;
+}
+
+.img7 {
+  float: left;
+  width: 33%;
+   padding-right: 1em;
+}
+.img6 {
+  width: 33%;
+  float: right;
+  padding-left: 1em;
+}
+.main-title {
+  color: white;
+  font-size: 2rem;
+}
+.main-section1,
+.main-section2,
+.main-section3,
+.main-section4,
+.main-section5,
+.main-section6{
+  font-size: 1.2rem;
+  padding: 1em 1em 1em 1em;
+}
+.main-section1 {
+  background-color: #0D47A1;
+  color: #fff;
+}
+.main-section2 {
+  background-color: #1E9DD1;
+  padding-top: 1em;
+  margin: 0 auto;
+  width: 75%;
+  color: #fff;
+}
+.main-section3 {
+  background-color: #C7CEA1;
+  color: #000;
+  height: auto;
+}
+main-section3 p {
+  color: #000;
+}
+.main-section3 p:last-of-type {
+  padding-bottom: 1em;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+  color: #0d47a1;
+  font-size: 2rem;
+  background-color: #C7CEA1;
+}
+.flexchild-gallery {
+  width: 49%;
+  border: 5px ridge orange;
+  margin-bottom: 1em;
+}
+.cave {
+  background-color: #EBD4AC;
+}
+.img-container {
+  position: relative;
+}
+.img4-text {
+  position: absolute;
+}
+.main-section5 {
+  background-color: #F6AD4B;
+  margin: 0 auto;
+  width: 70%;
+}
+.main-section6 {
+  background-color: #0D47A1;
+  color: #fff;
+  padding: 1em 3em;
+}
+.home h2 {
+  padding-bottom: 1em;
+}
+.flx {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1em;
+}
+.links {
+  background-color: #1E9DD1;
+  margin: 0 auto;
+  width: 90%;
+}
+.flx a {
+  color: #fff;
+  text-decoration: underline;
+}
+.flx a:hover {
+  color: red;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6.5em;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  border: 3px inset silver;
+}
+footer a {
+  color: white;
+  font-size: 2em;
+  padding: 0 .3em;
+}
+#route {
+  font-size: 4em;
+  background: rgb(241,34,12);
+background: linear-gradient(234deg, rgba(241,34,12,1) 32%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 62%, rgba(241,34,12,1) 8%);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* media */
+
+@media (max-width: 450px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7 {
+    width: 98%;
+  }
+  .flx {
+    flex-direction: column;
+  }
+  .main-section6 {
+    padding: 1em;
+  }
+  .main-section6:last-child {
+    padding-bottom: 2em;
+  }
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery img {
+    width: 98%;
+    margin: 0.5em;
+  }
+  footer {
+    flex-direction: column;
+    height:  55vw;
+  }
+  .header-li {
+    justify-content: center;
+    padding: 0 .5em;
+    font-size: ;
+  }
+  .header-li a {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+}
