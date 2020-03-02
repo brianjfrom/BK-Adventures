@@ -9,8 +9,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d37e990b5b.js" crossorigin="anonymous"></script>
+  <script src="thanksgiving.js"></script>
 </head>
 <body>
+  <div class="scrollBar">
+    <div class="progress-container">
+      <div class="progress-bar" id="myScrollBar"></div>
+    </div>
+  </div>
   <header>
     <nav>
       <div class="topnav" id="myTopnav">
@@ -130,6 +136,7 @@
     <div id="imgtext"></div>
   </div>
   </div>
+
   <footer>
     <h3>2020:BK-Adventures</h3>
     <i class="fas fa-route" id="route"></i>
@@ -139,29 +146,6 @@
       <a href="https://www.youtube.com/channel/UCdVyuH1JrLKwNFZvktthAHA" class="icons"><i class="fab fa-youtube"></i></a>
     </div>
   </footer>
-  <script>
-  function myFunction () {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-
-function myFunction1(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Get the image text
-  var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-}
-  </script>
+ 
 </body>
 </html>
