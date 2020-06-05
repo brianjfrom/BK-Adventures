@@ -53,10 +53,9 @@ header {
   font-size: 1.5rem;
 }
 .img1 {
-  transform: rotate(180deg);
   width: 50%;
   float: left;
-  padding-left: 1em;
+  padding-right: 1em;
 }
 .img2 {
   width: 50%;
