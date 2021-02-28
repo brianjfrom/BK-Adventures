@@ -2,7 +2,7 @@
 Blog for adventureing
 
 Bk Adventures was created October 2019, 1.0,
-current 2.3
+current 3.2
 
 GLenwood springs created Nov 2019,  1.0,
 current 1.1 
