@@ -126,6 +126,12 @@ p {
   float: left;
   border: 5px outset lightblue;
 }
+.bpeek-img {
+  width: 30%;
+  margin: 0 1em;
+  float: right;
+  border: 5px outset lightblue  ;
+}
 .aboutp {
   font-size: 1.5rem;
   padding: 1.5em;
