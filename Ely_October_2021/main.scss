@@ -10,6 +10,7 @@ html {
 body {
     font-size: 10px;
     box-sizing: border-box;
+    background-color: wheat;
 }
 
 header {
@@ -125,7 +126,7 @@ header {
 .third-text {
     position: relative;
     background-color: #8691a7;
-    min-height: 42vh;
+    min-height: 48vh;
 
     .third-text-text {
         
@@ -138,19 +139,7 @@ header {
     }
 
 }
-// .forth-text {
-//     background-color: rgb(211,172,112);
-//     min-height: 57vh;
-//     img {
-//         width: 33.3%;
-//         float: right;
-//         padding: 2rem;
-//     }
-//     p {
-//         font-size: 1.6rem;
-//         padding: 2rem;
-//     }
-// }
+
 
 .forth-text {
     display: grid;
@@ -166,5 +155,53 @@ header {
         font-size: 1.6rem;
         padding: 2rem;
         width: 100%;
+    }
+}
+.first-photo-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 90%;
+    grid-gap: 1rem;
+    padding: 1.5rem;
+    background: #000;
+
+    img {
+        width: 100%;
+    }
+}
+.fifth-text {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    background-color: rgb(73,89,46);
+    
+    p{
+        font-size: 1.5rem;
+        padding: 2rem;
+        color: #fff;
+    }
+    img {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+.second-photo-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 90%;
+    grid-gap: 1rem;
+    padding: 1.5rem;
+    background-color: black;
+
+
+    img {
+        width: 100%;
+
+    }
+
+    .larger {
+        height: 100%;
+        align-self: center;
     }
 }
