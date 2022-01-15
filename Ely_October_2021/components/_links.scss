@@ -1,0 +1,40 @@
+.links {
+    font-size: 1.6rem;
+    columns: 2;
+    padding: 1.5rem;
+    background-color: rgb(73,89,46);
+    
+    h2 {
+        color: whitesmoke;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        // justify-items: space-evenly;
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    li {
+        list-style: none;
+        padding: 1rem;
+        color: whitesmoke;
+        
+        em {
+            color: whitesmoke;
+            
+        }
+    }
+    a:hover {
+        text-decoration: underline;
+        color: whitesmoke;
+    }
+    
+}
+.links-2 {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
