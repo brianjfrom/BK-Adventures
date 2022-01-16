@@ -49,12 +49,16 @@
             .large-text {
                 font-size: 3.0rem;
             }
+            .small-text {
+                font-size: 2.5rem;
+            }
         }
     }
     .first_text {
 
         p {
             width: 90%;
+            text-indent: 0;
         }
     }
     .second_text {
@@ -111,6 +115,17 @@
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     }
     .first_text {
-        width: 97%;
+        
+        p{
+            width: 97%;
+        }
+    }
+    main > * {
+        p {
+            font-size: 1.3rem !important;
+        }
+    }
+    .second_text {
+        gap: 0;
     }
 }

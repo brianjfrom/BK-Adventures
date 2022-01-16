@@ -425,8 +425,12 @@ footer .footer-section-media i {
   header .main-text .large-text {
     font-size: 3.0rem;
   }
+  header .main-text .small-text {
+    font-size: 2.5rem;
+  }
   .first_text p {
     width: 90%;
+    text-indent: 0;
   }
   .second_text {
     flex-direction: column;
@@ -487,7 +491,13 @@ footer .footer-section-media i {
   .third-photo-group {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
-  .first_text {
+  .first_text p {
     width: 97%;
+  }
+  main > * p {
+    font-size: 1.3rem !important;
+  }
+  .second_text {
+    gap: 0;
   }
 }
