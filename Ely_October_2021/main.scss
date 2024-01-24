@@ -1,3 +1,5 @@
+@import "./components/mixins";
+
 *,
 html {
     margin: 0;
@@ -10,161 +12,13 @@ html {
 body {
     font-size: 10px;
     box-sizing: border-box;
+    background-color: wheat;
 }
 
-header {
-    background-image: url(./images/20211001_143317.jpg);
-    width: 100%;
-    height: 70vh;
-    // margin-bottom: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-position: center;
-    isolation: isolate;
+@import "./components/header";
+@import "./components/main";
+@import "./components/links";
+@import "./components/footer";
 
-    .header-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 1rem 0;
-        background-color: black; 
-        mix-blend-mode: multiply;
-        
-        p,
-        i {
-            font-size: 1.5rem;
-            color: white;
-        }
 
-        i {
-            display: none;
-        }
-    }
-    .main-text {
-        z-index: 1;
-        height: 60vh;
-        // height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        
-        .large-text {
-            font-size: 4.2rem;
-            color: #fda706;
-            text-shadow: 3px 1px 5px black;
-            font-family: papyrus;
-            font-weight: 600;
-            
-            
-        }
-        .small-text {
-            font-size: 3.7rem;
-            color: orange;
-            text-shadow: 3px 1px 5px black;
-            padding-top: 1rem;
-            font-family: papyrus;
-            font-weight: 600;
-        }
-    }
-    
-}
-.first_text {
-    background-color: #000;
-    min-height: 40vh;
-
-    p {
-        color: white;
-        font-size: 1.5rem;
-        margin: 0 auto;
-        width: 60%;
-        padding-top: 1.5rem;
-        text-indent: 2.5rem;
-
-        &::first-letter {
-            font-size: 3rem;
-        }
-    }
-}
-.second_text {
-    font-size: 1.6rem;
-    display: flex;
-    gap: 2rem;
-    flex: 1;
-    padding: 1.5rem;
-    background-color: #88cbf9;
-}
-
-.container-mcgill {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding: 1rem;
-    float: left;
-    
-    img {
-        width: 100%;
-    }
-    
-    .text-mcgill {
-        position: absolute;
-        width: 20%;
-        background-color: rgba(0, 0, 0, 0.5);
-        font-size: 1.5em;
-        padding: .5rem;
-        color: white;
-        
-        sup {
-            color: white;
-        }
-    }
-}
-.third-text {
-    position: relative;
-    background-color: #8691a7;
-    min-height: 42vh;
-
-    .third-text-text {
-        
-        p {
-            font-size: 1.6rem;
-            padding: 2rem;
-            color: whitesmoke;
-            
-        }
-    }
-
-}
-// .forth-text {
-//     background-color: rgb(211,172,112);
-//     min-height: 57vh;
-//     img {
-//         width: 33.3%;
-//         float: right;
-//         padding: 2rem;
-//     }
-//     p {
-//         font-size: 1.6rem;
-//         padding: 2rem;
-//     }
-// }
-
-.forth-text {
-    display: grid;
-    grid-template-columns: 2.5fr 1.5fr;
-    background-color: rgb(211,172,112);
-    
-
-    img {
-        width: 100%;
-        padding: 2rem;
-    }
-    p {
-        font-size: 1.6rem;
-        padding: 2rem;
-        width: 100%;
-    }
-}
+@import "./components/media-querys"

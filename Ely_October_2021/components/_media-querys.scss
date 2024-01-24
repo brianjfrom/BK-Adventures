@@ -1,0 +1,131 @@
+@include responsive(tab-port) {
+    .third-text,
+    .fifth-text {
+        grid-template-columns: 1fr 2fr;
+
+    }
+
+    .forth-text,
+    .sixth-text {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .first-photo-group {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin: 0;
+    
+}
+    .second-photo-group {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        margin: 0;
+        
+    }
+
+    .third-photo-group {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        margin: 0;
+    }
+    .first_text {
+
+        p {
+            width: 70%;
+        }
+    }
+}
+@include responsive(phone) {
+    header {
+        background-position: center;
+        .main-text {
+    
+            .large-text {
+                font-size: 3.0rem;
+            }
+            .small-text {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .first_text {
+
+        p {
+            width: 90%;
+            text-indent: 0;
+        }
+    }
+    .second_text {
+        flex-direction: column;
+    }
+    
+    .third-text,
+    .fifth-text,
+    .eighth-text,
+    .ninth-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .forth-text,
+    .sixth-text  {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .seventh-text {
+        columns: 1;
+        width: 100%;
+    }
+    .links {
+        columns: 1;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@include responsive(phone-sm) {
+    .first_text,
+    .second_text,
+    .third-text,
+    .forth-text,
+    .fifth-text,
+    .sixth-text,
+    .seventh-text,
+    .eighth-text,
+    .ninth-text {
+        padding: 1rem;
+
+        p {
+            padding: 1rem;
+        }
+    }
+    .footer-section-copy {
+        justify-content: center;
+        text-align: center;
+    }
+    .first-photo-group, .second-photo-group,
+    .third-photo-group {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    .first_text {
+        
+        p{
+            width: 97%;
+        }
+    }
+    main > * {
+        p {
+            font-size: 1.3rem !important;
+        }
+    }
+    .second_text {
+        gap: 0;
+    }
+}

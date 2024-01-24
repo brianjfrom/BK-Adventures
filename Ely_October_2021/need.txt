@@ -2,3 +2,4 @@ code spell checker
 live sass compiler
 live server
 https://commons.wikimedia.org/wiki/User:Finetooth
+Ely KOA Img https://armandsrancho.blogspot.com/2019/07/ely-nevada-koa.html
