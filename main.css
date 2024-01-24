@@ -170,7 +170,12 @@ p {
   color: yellow;
 }
 
-
+.dvv{
+  color: yellow;
+  font-family: serif;
+  font-size: 1.3rem;
+  padding-left: 5rem;
+}
 @media (max-width: 875px) {
   .sec-title {
     font-size: 2.5rem;
