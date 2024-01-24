@@ -1,5 +1,5 @@
 # BK-Adventures
-Blog for adventureing
+Blog for Adventuring
 
 Bk Adventures was created October 2019, 1.0,
 current 3.4
